@@ -1,0 +1,99 @@
+Understanding Data Types
+Test your Knowledge
+
+1. What type would you choose for the following “numbers”?
+A person’s telephone number: string, might have special cases
+A person’s height: int
+A person’s age: int
+A person’s gender (Male, Female, Prefer Not To Answer): string
+A person’s salary: double or float
+A book’s ISBNA book’s price: doulbe or float
+A book’s shipping weight: double or float
+A country’s population: int
+The number of stars in the universe: long
+The number of employees in each of the small or medium businesses in the United Kingdom (up to about 50,000 employees per business): int
+
+2. What are the difference between value type and reference type variables? What is boxing and unboxing?
+Value Type vs Referecne Type:
+- Value type holds a data value within its own memory space; reference type stores the address where the value is being stored
+- Value type store its contents on the stack; reference type store its content on the heap
+
+Boxing vs Unboxing
+- Boxing is the process of coverting value type variable into reference type variable
+- Unboxing is the process of converting reference type variable into value type variable
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+- Managed resource are pure .NET code, and code managed by runtime. Anything that lies within .NET framework and .NET framework classes such as string, int, bool variables.
+- Umanaged resource are object created outside of .NET libraries and are not managed by runtime, such as COM objects, file streams, connection objects.
+
+4. Whats the purpose of Garbage Collector in .NET?
+- The purpose of Garbage Collector is to manage the allocation and reclaiming of memory.
+- When we create any object in C#, common language runtime (CLR) allocate memory for object in heap.
+- Since the memory is not unlimited, garbage collector goes to heap, collects unused object and releases related memory.
+
+Controlling Flow and Converting Types
+Test your Knowledge
+
+1. What happens when you divide an int variable by 0?
+- Program throws a DivideByZeroException exception.
+- To prevent this, ensure that the dominator in a division operation with integer of Decimal value is non-zero.
+
+2. What happens when you divide a double variable by 0?
+- Dividing a floating-point value by zero doesn't throw an excpetion, it results in positive infinity, negative infinity, or NaN.
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its range?
+- In a checked context, integer arithmetic overflow throws OverflowException.
+- In an unchecked context, most significant bits are discarded and execution continues. 
+- By default, c# does not check for integer arithmetic overflow. We can change this complier option bu enabling "Check for arithmetic overflow/underflow" in Visual Studio
+- or use checked and unchecked keywords to override case by case.
+
+4. What is the difference between x = y++; and x = ++y;?
+- x = y++, assign the value of y to variable x first then increase value y
+- x = ++y, increase value y first and the assgin the incremented value to x
+
+5. What is the difference between break, continue, and return when used inside a loop statement?
+- break terminates the loop statement and transfer control to the statement that follows loop statment, if any.
+- continue starts a new iteration of the loop statement.
+- return terminates the execution of function and return function's result, if any.
+
+6. What are the three parts of a for statement and which of them are required?
+- Initializer, condition and iterator.
+- All the parts are optional, but we cannot omit the semicolens that separate the sections.
+
+7. What is the difference between the = and == operators?
+- = assignment operator is used to assign value to a variable
+- == equality operator checks whether two operands are equal or not
+
+8. Does the following statement compile? for ( ; true; ) ;
+- Yes, it creates a infinite loop
+
+9. What does the underscore _ represent in a switch expression? Defaults
+- switch expression is used to select one of many code blocks to be executed.
+- underscore replaces the default keyword to signify that it should match anything if reached "_ =>"
+
+10. What interface must an object implement to be enumerated over by using the foreach statement?
+- IEnumerable interface permits enumeration by using a foreach loop
+
+Arrays and Strings
+Test your Knowledge
+
+1. When to use String vs. StringBuilder in C# ?
+- String is immutable. Modifying anying string object will result into creation of a new string object. We use string if it remains constant.
+- StringBuilder is mutable. Use StringBuilder if it can change.
+
+2. What is the base class for all arrays in C#?
+- Array class
+
+3. How do you sort an array in C#?
+- Array.Sort()
+
+4. What property of an array object can be used to get the total number of elements in an array?
+- array.Length
+
+5. Can you store multiple data types in System.Array?
+- An array can be of any data type, but can only hold a single data type in an array.
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+- Clone() returns a new array object containing all the elements in the original array.
+- CopyTo() copies the elements into another existing array.
+- Both of them are shallow copy, each array element contains references to the same object in the original array
