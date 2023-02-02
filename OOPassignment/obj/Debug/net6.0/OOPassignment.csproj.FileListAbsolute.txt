@@ -1,0 +1,15 @@
+/Users/changxu/Projects/Jan2020/OOPassignment/bin/Debug/net6.0/OOPassignment
+/Users/changxu/Projects/Jan2020/OOPassignment/bin/Debug/net6.0/OOPassignment.deps.json
+/Users/changxu/Projects/Jan2020/OOPassignment/bin/Debug/net6.0/OOPassignment.runtimeconfig.json
+/Users/changxu/Projects/Jan2020/OOPassignment/bin/Debug/net6.0/OOPassignment.dll
+/Users/changxu/Projects/Jan2020/OOPassignment/bin/Debug/net6.0/OOPassignment.pdb
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.csproj.AssemblyReference.cache
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.AssemblyInfoInputs.cache
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.AssemblyInfo.cs
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.csproj.CoreCompileInputs.cache
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.dll
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/refint/OOPassignment.dll
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.pdb
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/OOPassignment.genruntimeconfig.cache
+/Users/changxu/Projects/Jan2020/OOPassignment/obj/Debug/net6.0/ref/OOPassignment.dll
