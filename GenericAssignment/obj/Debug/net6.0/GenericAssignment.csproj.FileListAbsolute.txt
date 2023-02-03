@@ -1,0 +1,15 @@
+/Users/changxu/Projects/Jan2020/GenericAssignment/bin/Debug/net6.0/GenericAssignment
+/Users/changxu/Projects/Jan2020/GenericAssignment/bin/Debug/net6.0/GenericAssignment.deps.json
+/Users/changxu/Projects/Jan2020/GenericAssignment/bin/Debug/net6.0/GenericAssignment.runtimeconfig.json
+/Users/changxu/Projects/Jan2020/GenericAssignment/bin/Debug/net6.0/GenericAssignment.dll
+/Users/changxu/Projects/Jan2020/GenericAssignment/bin/Debug/net6.0/GenericAssignment.pdb
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.csproj.AssemblyReference.cache
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.AssemblyInfoInputs.cache
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.AssemblyInfo.cs
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.csproj.CoreCompileInputs.cache
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.dll
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/refint/GenericAssignment.dll
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.pdb
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/GenericAssignment.genruntimeconfig.cache
+/Users/changxu/Projects/Jan2020/GenericAssignment/obj/Debug/net6.0/ref/GenericAssignment.dll
