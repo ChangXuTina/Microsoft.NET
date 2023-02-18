@@ -1,0 +1,102 @@
+.navbar {
+    background-image:url("Header.png");
+    height: 350px;
+}
+
+html * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .col-8 {
+    border: solid black;
+}
+
+.col-4 {
+    border: solid black;    
+} */
+
+.intro {
+    border: solid gray;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.inner-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.product {
+    border: solid gray;
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+/* .product-ele {
+    border: solid black;
+} */
+
+.product-row {
+    /* border: solid black; */
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.news {
+    border: solid gray;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.news-row {
+    /* border: solid black; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 70px;
+}
+
+.message {
+    border: solid gray;
+    height: 550px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+h1 {
+    color: #c43f4c;
+    font-weight: bold;
+}
+
+.fill img{
+    width: 70%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid gray;
+}
+
+.news-row p{
+    margin: 0;
+}
+
+.date {
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 20px;
+    height: 100px;
+    background-image:url("Header.png");
+}
+
+.col-md-6 {
+    margin-top: 25px;
+    
+}
