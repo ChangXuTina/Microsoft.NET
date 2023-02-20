@@ -1,0 +1,61 @@
+﻿<Properties StartupConfiguration="{7E968AD5-5583-4150-ADBD-4B796F929873}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HRM.WebMVCApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HRM.WebMVCApp/Views/Candidate/Index.cshtml">
+    <Files>
+      <File FileName="HRM.Infrastructure/Repository/BaseRepositoryAsync.cs" Line="14" Column="4" />
+      <File FileName="HRM.Infrastructure/Repository/CandidateRespositoryAsync.cs" Line="1" Column="1" />
+      <File FileName="HRM.WebMVCApp/Program.cs" Line="22" Column="1" />
+      <File FileName="HRM.ApllicationCore/Repository/ICandidateRepositoryAsync.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Service/ICandidateServiceAsync.cs" Line="11" Column="33" />
+      <File FileName="HRM.ApllicationCore/Model/CandidateRequestModel.cs" Line="10" Column="34" />
+      <File FileName="HRM.ApllicationCore/Entity/Candidate.cs" Line="20" Column="19" />
+      <File FileName="HRM.Infrastructure/Service/CandidateServiceAsync.cs" Line="34" Column="61" />
+      <File FileName="HRM.WebMVCApp/Controllers/HomeController.cs" Line="25" Column="1" />
+      <File FileName="HRM.WebMVCApp/Controllers/Index.cshtml" Line="26" Column="7" />
+      <File FileName="HRM.WebMVCApp/Controllers/CandidateController.cs" Line="72" Column="46" />
+      <File FileName="HRM.WebMVCApp/Views/_ViewImports.cshtml" Line="7" Column="1" />
+      <File FileName="HRM.WebMVCApp/Views/Candidate/Index.cshtml" Line="11" Column="28" />
+      <File FileName="HRM.WebMVCApp/Views/Candidate/Edit.cshtml" Line="3" Column="54" />
+      <File FileName="HRM.WebMVCApp/Views/Candidate/Delete.cshtml" Line="8" Column="70" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HumanResourceManagement" expanded="True">
+            <Node name="HRM.ApllicationCore" expanded="True">
+              <Node name="Entity" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="Request" expanded="True" />
+                <Node name="Response" expanded="True" />
+              </Node>
+              <Node name="Service" expanded="True" />
+            </Node>
+            <Node name="HRM.Infrastructure" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Service" expanded="True" />
+            </Node>
+            <Node name="HRM.WebMVCApp" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Candidate" expanded="True" />
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

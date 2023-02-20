@@ -1,0 +1,284 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HRM.WebMVCApp
+build_property.RootNamespace = HRM.WebMVCApp
+build_property.ProjectDir = /Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Candidate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Candidate/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Candidate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Candidate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeRole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSb2xlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeRole/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSb2xlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeRole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSb2xlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSb2xlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVTdGF0dXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeStatus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVTdGF0dXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVTdGF0dXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVTdGF0dXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVUeXBlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVUeXBlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVUeXBlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/EmployeeType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVUeXBlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Feedback/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Feedback/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Feedback/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Feedback/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Interview/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Interview/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Interview/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Interview/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3U3RhdHVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewStatus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3U3RhdHVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3U3RhdHVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3U3RhdHVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3VHlwZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3VHlwZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3VHlwZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/InterviewType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW50ZXJ2aWV3VHlwZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQ2F0ZWdvcnkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobRequirement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iUmVxdWlyZW1lbnQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobRequirement/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iUmVxdWlyZW1lbnQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobRequirement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iUmVxdWlyZW1lbnQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/JobRequirement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iUmVxdWlyZW1lbnQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Role/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Submission/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VibWlzc2lvbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Submission/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VibWlzc2lvbi9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Submission/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VibWlzc2lvbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Submission/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VibWlzc2lvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/UserRole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/UserRole/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGUvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/UserRole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/UserRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hkkowsytxp

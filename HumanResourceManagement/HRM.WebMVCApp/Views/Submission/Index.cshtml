@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SubmissionResponseModel>;
+<div class="page-header">
+    <h1>List of Submissions</h1>
+</div>
+<a asp-action="Create" asp-controller="Submission">Add New Submission</a>
+<table class="table table-bordered table-striped table-hovered">
+    <thead>
+        <tr>
+            <th>Candidate</th>
+            <th>Job Requirement</th>
+            <th>Applied On</th>
+            <th>Option</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var m in Model)
+            {
+                <tr>
+                    <td>@m.CandidateId</td>
+                    <td>@m.JobRequredmentId</td>
+                    <td>@m.AppliedOn</td>
+                    <td><a asp-action="Edit" asp-controller="Submission" asp-route-id="@m.id">Edit</a></td>
+                    <td><a asp-action="Delete" asp-controller="Submission" asp-route-id="@m.id">Delete</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

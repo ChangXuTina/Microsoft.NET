@@ -1,0 +1,15 @@
+﻿@model UserRoleResponseModel;
+<form asp-action="Delete" asp-controller="UserRole" method="post">
+    <div class="container">
+        <div class="row">
+            <label asp-for="UserId"></label>
+            <span>@Model.UserId</span>
+        </div>
+        <div class="row">
+            <label asp-for="RoleId"></label>
+            <span>@Model.RoleId</span>
+        </div>
+
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </div>
+</form>

@@ -1,0 +1,14 @@
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/bin/Debug/net6.0/HRM.ApllicationCore.deps.json
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/bin/Debug/net6.0/HRM.ApllicationCore.runtimeconfig.json
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/bin/Debug/net6.0/HRM.ApllicationCore.dll
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/bin/Debug/net6.0/HRM.ApllicationCore.pdb
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.csproj.AssemblyReference.cache
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.AssemblyInfoInputs.cache
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.AssemblyInfo.cs
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.csproj.CoreCompileInputs.cache
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.dll
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/refint/HRM.ApllicationCore.dll
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.pdb
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/HRM.ApllicationCore.genruntimeconfig.cache
+/Users/changxu/Projects/HumanResourceManagement/HRM.ApllicationCore/obj/Debug/net6.0/ref/HRM.ApllicationCore.dll

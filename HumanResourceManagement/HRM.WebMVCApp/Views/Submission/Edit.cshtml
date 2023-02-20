@@ -1,0 +1,22 @@
+﻿@model SubmissionResponseModel;
+<div class="container">
+    <form asp-controller="Submission" asp-action="Edit" method="post">
+        <input type="hidden" asp-for="id" />
+        <div class="my-5 row">
+            <label for="CandidateId">Candidate Id</label>
+            <input asp-for="CandidateId" class="form-control" />
+            <span asp-validation-for="CandidateId"></span>
+        </div>
+        <div class="my-5 row col-12">
+            <label for="JobRequirementId">Job Requirement Id</label>
+            <input asp-for="JobRequredmentId" class="form-control" />
+            <span asp-validation-for="JobRequredmentId"></span>
+        </div>
+        <div class="my-5 row col-12">
+            <label for="AppliedOn">Applied On</label>
+            <input asp-for="AppliedOn" class="form-control" />
+            <span asp-validation-for="AppliedOn"></span>
+        </div>
+        <input type="submit" value="Update Submission" class="btn btn-primary" />
+    </form>
+</div>
