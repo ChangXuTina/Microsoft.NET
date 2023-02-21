@@ -1,0 +1,9 @@
+1. Difference of MVC controller and webapi controller
+- MVC controller:
+    - inherit from Controller 
+    - used for developing Web applications that reply to both data and views
+    - Return data in JSON formant
+- WebAPI
+    - inherit from Controller Base
+    - Used for generating HTTP services that reply only data
+    - Could return data in JSON, XML and different formats
