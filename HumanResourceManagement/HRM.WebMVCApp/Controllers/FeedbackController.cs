@@ -29,8 +29,9 @@ namespace HRM.WebMVCApp.Controllers
             var feedbackCollection = await feedbackServiceAsync.GetAllFeedbacksAsync();
             return View(feedbackCollection);
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.InterviewList = new SelectList(await interviewServiceAsync.GetAllInterviewsAsync(), "Id", "SubmissionId");
             return View();
         }
         [HttpPost]
@@ -38,7 +39,6 @@ namespace HRM.WebMVCApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewBag.InterviewList = new SelectList(await interviewServiceAsync.GetAllInterviewsAsync(), "Id", "SubmissionId");
                 await feedbackServiceAsync.AddFeedbackAsync(model);
                 return RedirectToAction("Index");
             }

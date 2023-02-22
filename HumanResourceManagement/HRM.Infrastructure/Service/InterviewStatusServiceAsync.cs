@@ -16,7 +16,7 @@ namespace HRM.Infrastructure.Service
             interviewStatusRepositoryAsync = _interviewStatusRepositoryAsync;
         }
 
-        public Task<int> AddInterviewStatusAsync(InterviewTypeRequestModel model)
+        public Task<int> AddInterviewStatusAsync(InterviewStatusRequestModel model)
         {
             InterviewStatus interviewStatus = new InterviewStatus()
             {
@@ -24,11 +24,7 @@ namespace HRM.Infrastructure.Service
                 IsActive = model.IsActive
             };
             return interviewStatusRepositoryAsync.InsertAsync(interviewStatus);
-        }
 
-        public Task<int> AddInterviewStatusAsync(InterviewStatusRequestModel model)
-        {
-            throw new NotImplementedException();
         }
 
         public Task<int> DeleteInterviewStatusAsync(int id)

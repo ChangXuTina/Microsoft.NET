@@ -62,7 +62,7 @@ namespace HRM.WebMVCApp.Controllers
             ViewBag.EmployeeRoleList = new SelectList(await employeeRoleServiceAsync.GetAllEmployeeRolesAsync(), "Id", "Title");
             ViewBag.EmployeeTypeList = new SelectList(await employeeTypeServiceAsync.GetAllEmployeeTypesAsync(), "Id", "Title");
             ViewBag.EmployeeStatusList = new SelectList(await employeeStatusServiceAsync.GetAllEmployeeStatusAsync(), "Id", "Title");
-            ViewBag.ManagerList = new SelectList(await employeeServiceAsync.GetAllEmployeesAsync(), "Id", "FirsName");
+            ViewBag.ManagerList = new SelectList(await employeeServiceAsync.GetAllEmployeesAsync(), "Id", "FirstName");
             var result = await employeeServiceAsync.GetEmployeeByIdAsync(id);
             return View(result);
         }
