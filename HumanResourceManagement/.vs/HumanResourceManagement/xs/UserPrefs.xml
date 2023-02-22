@@ -1,28 +1,39 @@
 ﻿<Properties StartupConfiguration="{7E968AD5-5583-4150-ADBD-4B796F929873}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HRM.WebMVCApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HRM.WebMVCApp/Views/Candidate/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HRM.WebMVCApp/Views/Employee/Create.cshtml">
     <Files>
-      <File FileName="HRM.Infrastructure/Repository/BaseRepositoryAsync.cs" Line="14" Column="4" />
-      <File FileName="HRM.Infrastructure/Repository/CandidateRespositoryAsync.cs" Line="1" Column="1" />
-      <File FileName="HRM.WebMVCApp/Program.cs" Line="22" Column="1" />
-      <File FileName="HRM.ApllicationCore/Repository/ICandidateRepositoryAsync.cs" Line="1" Column="1" />
-      <File FileName="HRM.ApllicationCore/Service/ICandidateServiceAsync.cs" Line="11" Column="33" />
-      <File FileName="HRM.ApllicationCore/Model/CandidateRequestModel.cs" Line="10" Column="34" />
-      <File FileName="HRM.ApllicationCore/Entity/Candidate.cs" Line="20" Column="19" />
-      <File FileName="HRM.Infrastructure/Service/CandidateServiceAsync.cs" Line="34" Column="61" />
-      <File FileName="HRM.WebMVCApp/Controllers/HomeController.cs" Line="25" Column="1" />
-      <File FileName="HRM.WebMVCApp/Controllers/Index.cshtml" Line="26" Column="7" />
-      <File FileName="HRM.WebMVCApp/Controllers/CandidateController.cs" Line="72" Column="46" />
-      <File FileName="HRM.WebMVCApp/Views/_ViewImports.cshtml" Line="7" Column="1" />
-      <File FileName="HRM.WebMVCApp/Views/Candidate/Index.cshtml" Line="11" Column="28" />
-      <File FileName="HRM.WebMVCApp/Views/Candidate/Edit.cshtml" Line="3" Column="54" />
-      <File FileName="HRM.WebMVCApp/Views/Candidate/Delete.cshtml" Line="8" Column="70" />
+      <File FileName="HRM.WebMVCApp/Controllers/UserRoleController.cs" Line="39" Column="13" />
+      <File FileName="HRM.ApllicationCore/Entity/Role.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Entity/User.cs" Line="14" Column="19" />
+      <File FileName="HRM.WebMVCApp/Views/UserRole/Create.cshtml" Line="14" Column="1" />
+      <File FileName="HRM.WebMVCApp/Views/Submission/Create.cshtml" Line="16" Column="91" />
+      <File FileName="HRM.WebMVCApp/Views/Submission/Edit.cshtml" Line="17" Column="91" />
+      <File FileName="HRM.WebMVCApp/Views/UserRole/Edit.cshtml" Line="17" Column="7" />
+      <File FileName="HRM.ApllicationCore/Entity/JobRequirement.cs" Line="21" Column="22" />
+      <File FileName="HRM.ApllicationCore/Entity/JobCategory.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Entity/EmployeeStatus.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Entity/EmployeeRole.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Entity/EmployeeType.cs" Line="1" Column="1" />
+      <File FileName="HRM.ApllicationCore/Entity/Employee.cs" Line="36" Column="50" />
+      <File FileName="HRM.WebMVCApp/Views/Employee/Create.cshtml" Line="57" Column="31" />
+      <File FileName="HRM.WebMVCApp/Views/Employee/Edit.cshtml" Line="69" Column="15" />
+      <File FileName="HRM.WebMVCApp/Controllers/InterviewController.cs" Line="52" Column="133" />
+      <File FileName="HRM.ApllicationCore/Entity/Feedback.cs" Line="1" Column="1" />
+      <File FileName="HRM.WebMVCApp/Controllers/FeedbackController.cs" Line="50" Column="127" />
+      <File FileName="HRM.WebMVCApp/Views/Feedback/Create.cshtml" Line="21" Column="7" />
+      <File FileName="HRM.WebMVCApp/Controllers/SubmissionController.cs" Line="49" Column="50" />
+      <File FileName="HRM.WebMVCApp/Views/Employee/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="HRM.Infrastructure/Migrations/20230222054134_EmployeeManagerNullable.Designer.cs" Line="468" Column="43" />
+      <File FileName="HRM.ApllicationCore/Entity/Interview.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="HRM.WebMVCApp/Controllers/EmployeeController.cs" Line="48" Column="1" NotebookId="1" />
+      <File FileName="HRM.WebMVCApp/Views/Interview/Create.cshtml" Line="31" Column="112" NotebookId="1" />
+      <File FileName="HRM.WebMVCApp/Views/Interview/Edit.cshtml" Line="43" Column="39" NotebookId="1" />
+      <File FileName="HRM.WebMVCApp/Views/Feedback/Edit.cshtml" Line="7" Column="108" NotebookId="1" />
+      <File FileName="HRM.Infrastructure/Service/EmployeeServiceAsync.cs" Line="71" Column="1" NotebookId="1" />
+      <File FileName="HRM.Infrastructure/Service/EmployeeRoleServiceAsync.cs" Line="45" Column="1" NotebookId="1" />
+      <File FileName="HRM.Infrastructure/Repository/BaseRepositoryAsync.cs" Line="30" Column="1" NotebookId="1" />
+      <File FileName="HRM.Infrastructure/Service/EmployeeTypeServiceAsync.cs" Line="45" Column="1" NotebookId="1" />
+      <File FileName="HRM.ApllicationCore/Service/IEmployeeServiceAsync.cs" Line="13" Column="50" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -34,28 +45,41 @@
                 <Node name="Request" expanded="True" />
                 <Node name="Response" expanded="True" />
               </Node>
-              <Node name="Service" expanded="True" />
-            </Node>
-            <Node name="HRM.Infrastructure" expanded="True">
-              <Node name="Data" expanded="True" />
               <Node name="Repository" expanded="True" />
               <Node name="Service" expanded="True" />
             </Node>
+            <Node name="HRM.Infrastructure" expanded="True">
+              <Node name="Migrations" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="EmployeeServiceAsync.cs" selected="True" />
+              </Node>
+            </Node>
             <Node name="HRM.WebMVCApp" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Candidate" expanded="True" />
-                <Node name="Home" expanded="True" />
+                <Node name="Employee" expanded="True" />
+                <Node name="Feedback" expanded="True" />
+                <Node name="Interview" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>this.ViewBag.Dynamic View.ManagerList</Value>
+          <Value>this.ViewBag.Dynamic View.EmployeeTypeList</Value>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HRM.WebMVCApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/Controllers/EmployeeController.cs" relfile="HRM.WebMVCApp/Controllers/EmployeeController.cs" line="42" column="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

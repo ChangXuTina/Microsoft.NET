@@ -17,15 +17,15 @@ namespace HRM.Infrastructure.Service
             submissionRepositoryAsync = _submissionRepositoryAsync;
         }
 
-        public Task<int> AddSubmissiontAsync(SubmissionRequestModel model)
+        public async Task<int> AddSubmissiontAsync(SubmissionRequestModel model)
         {
             Submission submission = new Submission()
             {
                 CandidateId = model.CandidateId,
-                JobRequredmentId = model.JobRequredmentId,
+                JobRequirementId = model.JobRequirementId,
                 AppliedOn = model.AppliedOn
             };
-            return submissionRepositoryAsync.InsertAsync(submission);
+            return await submissionRepositoryAsync.InsertAsync(submission);
         }
 
         public Task<int> DeleteSubmissionAsync(int id)
@@ -39,7 +39,7 @@ namespace HRM.Infrastructure.Service
             if(result != null)
             {
                 return result.ToList().Select(x => new SubmissionResponseModel()
-                { id = x.id, CandidateId = x.CandidateId, JobRequredmentId = x.JobRequredmentId, AppliedOn = x.AppliedOn});
+                { id = x.id, CandidateId = x.CandidateId, JobRequirementId = x.JobRequirementId, AppliedOn = x.AppliedOn});
             }
             return null;
         }
@@ -53,7 +53,7 @@ namespace HRM.Infrastructure.Service
                 {
                     id = result.id,
                     CandidateId = result.CandidateId,
-                    JobRequredmentId = result.JobRequredmentId,
+                    JobRequirementId = result.JobRequirementId,
                     AppliedOn = result.AppliedOn
                 };
             }
@@ -66,7 +66,7 @@ namespace HRM.Infrastructure.Service
             {
                 id = model.id,
                 CandidateId = model.CandidateId,
-                JobRequredmentId = model.JobRequredmentId,
+                JobRequirementId = model.JobRequirementId,
                 AppliedOn = model.AppliedOn
             };
             return submissionRepositoryAsync.UpdateAsync(submission);

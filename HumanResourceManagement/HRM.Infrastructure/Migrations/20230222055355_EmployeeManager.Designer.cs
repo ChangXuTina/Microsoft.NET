@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM.Infrastructure.Migrations
 {
     [DbContext(typeof(HRMDbContext))]
-    [Migration("20230221082055_UserIdIdentity")]
-    partial class UserIdIdentity
+    [Migration("20230222055355_EmployeeManager")]
+    partial class EmployeeManager
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -99,7 +99,7 @@ namespace HRM.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(20)");
 
-                    b.Property<int?>("ManagerId")
+                    b.Property<int>("ManagerId")
                         .HasColumnType("int");
 
                     b.Property<string>("Phone")
@@ -398,9 +398,6 @@ namespace HRM.Infrastructure.Migrations
                     b.Property<int>("JobRequirementId")
                         .HasColumnType("int");
 
-                    b.Property<int>("JobRequredmentId")
-                        .HasColumnType("int");
-
                     b.HasKey("id");
 
                     b.HasIndex("CandidateId");
@@ -480,7 +477,9 @@ namespace HRM.Infrastructure.Migrations
 
                     b.HasOne("HRM.ApllicationCore.Entity.Employee", "Manager")
                         .WithMany()
-                        .HasForeignKey("ManagerId");
+                        .HasForeignKey("ManagerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("EmployeeRole");
 

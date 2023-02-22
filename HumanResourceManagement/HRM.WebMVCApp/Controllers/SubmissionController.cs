@@ -6,6 +6,7 @@ using HRM.ApllicationCore.Model.Request;
 using HRM.ApllicationCore.Model.Response;
 using HRM.ApllicationCore.Service;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,10 +15,17 @@ namespace HRM.WebMVCApp.Controllers
     public class SubmissionController : Controller
     {
         private readonly ISubmissionServiceAsync submissionServiceAsync;
+        private readonly ICandidateServiceAsync candidateServiceAsync;
+        private readonly IJobRequirementServiceAsync jobRequirementServiceAsync;
 
-        public SubmissionController(ISubmissionServiceAsync _submissionServiceAsync)
+        public SubmissionController(
+            ISubmissionServiceAsync SubmissionServiceAsync,
+            ICandidateServiceAsync _candidateServiceAsync,
+            IJobRequirementServiceAsync _jobRequirementServiceAsync)
         {
-            submissionServiceAsync = _submissionServiceAsync;
+            submissionServiceAsync = SubmissionServiceAsync;
+            candidateServiceAsync = _candidateServiceAsync;
+            jobRequirementServiceAsync = _jobRequirementServiceAsync;
         }
         // GET: /<controller>/
         public async Task<IActionResult> Index()
@@ -25,8 +33,11 @@ namespace HRM.WebMVCApp.Controllers
             var submissionCollection = await submissionServiceAsync.GetAllSubmissionsAsync();
             return View(submissionCollection);
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+
+            ViewBag.CandidateList = new SelectList(await candidateServiceAsync.GetAllCandidatesAsync(),"Id","FirstName");
+            ViewBag.JobRequirementList = new SelectList(await jobRequirementServiceAsync.GetAllJobRequirementsAsync(), "Id", "Title");
             return View();
         }
         [HttpPost]
@@ -42,6 +53,8 @@ namespace HRM.WebMVCApp.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
+            ViewBag.CandidateList = new SelectList(await candidateServiceAsync.GetAllCandidatesAsync(), "Id", "FirstName");
+            ViewBag.JobRequirementList = new SelectList(await jobRequirementServiceAsync.GetAllJobRequirementsAsync(), "Id", "Title");
             var result = await submissionServiceAsync.GetSubmissionByIdAsync(id);
             return View(result);
         }
@@ -71,6 +84,7 @@ namespace HRM.WebMVCApp.Controllers
             await submissionServiceAsync.DeleteSubmissionAsync(model.id);
             return RedirectToAction("Index");
         }
+
     }
 }
 

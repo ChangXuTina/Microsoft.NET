@@ -34,7 +34,8 @@ namespace HRM.Infrastructure.Service
                 EmployeeRoleId = model.EmployeeTypeId,
                 EmployeeTypeId = model.EmployeeTypeId,
                 EmployeeStatusId = model.EmployeeStatusId,
-                ManagerId = model.ManagerId
+                //ManagerId = model.ManagerId
+                ManagerId = 5
             };
             return employeeRepositoryAsync.InsertAsync(employee);
         }
@@ -64,7 +65,7 @@ namespace HRM.Infrastructure.Service
                     EmployeeRoleId = x.EmployeeTypeId,
                     EmployeeTypeId = x.EmployeeTypeId,
                     EmployeeStatusId = x.EmployeeStatusId,
-                    ManagerId = (int)x.ManagerId
+                    ManagerId = (int)(x.ManagerId == null ? -1 : x.ManagerId)
                 });
             }
             return null;
@@ -90,7 +91,7 @@ namespace HRM.Infrastructure.Service
                     EmployeeRoleId = result.EmployeeTypeId,
                     EmployeeTypeId = result.EmployeeTypeId,
                     EmployeeStatusId = result.EmployeeStatusId,
-                    ManagerId = (int)result.ManagerId
+                    ManagerId = (int)(result.ManagerId == null ? -1 : result.ManagerId)
                 };
             }
             return null;

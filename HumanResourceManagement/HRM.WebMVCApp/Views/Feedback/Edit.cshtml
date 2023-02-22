@@ -4,7 +4,7 @@
         <input type="hidden" asp-for="Id" />
         <div class="my-5 row">
             <label for="InterviewId">InterviewId</label>
-            <input asp-for="InterviewId" class="form-control" />
+            <select class="form-control" asp-for="InterviewId" asp-items="@ViewBag.InterviewList"></select>
             <span asp-validation-for="InterviewId"></span>
         </div>
         <div class="my-5 row col-12">

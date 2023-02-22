@@ -8,8 +8,8 @@ namespace HRM.ApllicationCore.Model.Request
         public int id { get; set; }
         [Required(ErrorMessage = "CandidateId is required")]
         public int CandidateId { get; set; }
-        [Required(ErrorMessage = "JobRequredmentId is required")]
-        public int JobRequredmentId { get; set; }
+        [Required(ErrorMessage = "JobRequirementId is required")]
+        public int JobRequirementId { get; set; }
         [Required(ErrorMessage = "AppliedOn is required")]
         public DateTime AppliedOn { get; set; }
 

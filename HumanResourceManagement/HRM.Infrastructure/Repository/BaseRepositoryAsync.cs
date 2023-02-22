@@ -42,7 +42,7 @@ namespace HRM.Infrastructure.Repository
 
         public async Task<int> UpdateAsync(T entity)
         {
-            db.Entry(entity).State = EntityState.Modified;
+            db.Entry(entity).State = EntityState.Modified;            
             return await db.SaveChangesAsync();
         }
     }

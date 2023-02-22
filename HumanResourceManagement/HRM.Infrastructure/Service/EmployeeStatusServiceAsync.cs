@@ -65,6 +65,7 @@ namespace HRM.Infrastructure.Service
         {
             EmployeeStatus employeeStatus = new EmployeeStatus()
             {
+                Id = model.Id,
                 Title = model.Title,
                 Description = model.Description,
                 IsActive = model.IsActive

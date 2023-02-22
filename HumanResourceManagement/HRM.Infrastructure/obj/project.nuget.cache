@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uYLBoykspkgrsNei9lm7vX74vtgLQPd4HhJ1Hu8bZhaoHWVekU7yGc9kPFxPxv6oxhvtihh08gn0X1Pmmh9ZoQ==",
+  "dgSpecHash": "aQpTeAJW8JZRm6ltldYF+Va4nPf+K7Nk8US7hMnuUOsjKunHRmquSbtAskZviAsE+pYn4i/sCGn05/2JPfkLfw==",
   "success": true,
   "projectFilePath": "/Users/changxu/Projects/HumanResourceManagement/HRM.Infrastructure/HRM.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -75,9 +75,7 @@
     "/Users/changxu/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/changxu/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/changxu/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
+    "/Users/changxu/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

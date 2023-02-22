@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using HRM.ApllicationCore.Model.Request;
 using HRM.ApllicationCore.Model.Response;
 using HRM.ApllicationCore.Service;
+using HRM.Infrastructure.Service;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,10 +16,12 @@ namespace HRM.WebMVCApp.Controllers
     public class FeedbackController : Controller
     {
         private readonly IFeedbackServiceAsync feedbackServiceAsync;
+        private readonly IInterviewServiceAsync interviewServiceAsync;
 
-        public FeedbackController(IFeedbackServiceAsync _feedbackServiceAsync)
+        public FeedbackController(IFeedbackServiceAsync _feedbackServiceAsync, IInterviewServiceAsync _interviewServiceAsync)
         {
             feedbackServiceAsync = _feedbackServiceAsync;
+            interviewServiceAsync = _interviewServiceAsync;
         }
         // GET: /<controller>/
         public async Task<IActionResult> Index()
@@ -34,6 +38,7 @@ namespace HRM.WebMVCApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.InterviewList = new SelectList(await interviewServiceAsync.GetAllInterviewsAsync(), "Id", "SubmissionId");
                 await feedbackServiceAsync.AddFeedbackAsync(model);
                 return RedirectToAction("Index");
             }
@@ -42,6 +47,7 @@ namespace HRM.WebMVCApp.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
+            ViewBag.InterviewList = new SelectList(await interviewServiceAsync.GetAllInterviewsAsync(), "Id", "SubmissionId");
             var result = await feedbackServiceAsync.GetFeedbackByIdAsync(id);
             return View(result);
         }

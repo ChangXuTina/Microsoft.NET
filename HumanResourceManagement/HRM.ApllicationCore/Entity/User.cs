@@ -7,7 +7,8 @@ namespace HRM.ApllicationCore.Entity
 {
 	public class User
 	{
-		public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         [Column(TypeName = "varchar(20)")]
         public string Username { get; set; }
         [Required]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cs1Iev9iZ9B6OR+iciqwiFI6KQryqTtCASZT7TZT08X6wXIFAip2tLNEgjX9cnm6VhzY1e7T+iiWOsawriv+aQ==",
+  "dgSpecHash": "lQYZyrtu2WN+dpDLeMG6hnQ+f55+XptnTBQmLNxTLlr31UHkL1KUV1h1IBZJIc1BnT6fsyUgpBAc+u7UsR/mAw==",
   "success": true,
   "projectFilePath": "/Users/changxu/Projects/HumanResourceManagement/HRM.WebMVCApp/HRM.WebMVCApp.csproj",
   "expectedPackageFiles": [
@@ -76,10 +76,7 @@
     "/Users/changxu/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/changxu/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/changxu/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
-    "/Users/changxu/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.12/microsoft.netcore.app.host.osx-arm64.6.0.12.nupkg.sha512"
+    "/Users/changxu/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

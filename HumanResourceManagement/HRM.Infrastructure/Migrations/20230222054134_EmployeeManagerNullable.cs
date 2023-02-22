@@ -5,7 +5,7 @@
 namespace HRM.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class UserIdIdentity : Migration
+    public partial class EmployeeManagerNullable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

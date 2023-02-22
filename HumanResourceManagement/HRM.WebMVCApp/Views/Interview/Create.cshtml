@@ -3,12 +3,12 @@
     <form asp-controller="Interview" asp-action="Create" method="post">
         <div class="my-5 row">
             <label for="SubmissionId">SubmissionId</label>
-            <input asp-for="SubmissionId" class="form-control" />
+            <select class="form-control" asp-for="SubmissionId" asp-items="@ViewBag.SubmissionList"></select>
             <span asp-validation-for="SubmissionId"></span>
         </div>
         <div class="my-5 row col-12">
             <label for="InterviewDate">InterviewDate</label>
-            <input asp-for="InterviewDate" class="form-control" />
+            <input asp-for="InterviewDate" type="text" class="form-control" id="datepicker" />
             <span asp-validation-for="InterviewDate"></span>
         </div>
         <div class="my-5 row col-12">
@@ -18,19 +18,32 @@
         </div>
         <div class="my-5 row col-12">
             <label for="InterviewTypeId">InterviewTypeId</label>
-            <input asp-for="InterviewTypeId" class="form-control" />
+            <select class="form-control" asp-for="InterviewTypeId" asp-items="@ViewBag.InterviewTypeList"></select>
             <span asp-validation-for="InterviewTypeId"></span>
         </div>
         <div class="my-5 row col-12">
             <label for="InterviewStatusId">InterviewStatusId</label>
-            <input asp-for="InterviewStatusId" class="form-control" />
+            <select class="form-control" asp-for="InterviewStatusId" asp-items="@ViewBag.InterviewStatusList"></select>
             <span asp-validation-for="InterviewStatusId"></span>
         </div>
         <div class="my-5 row col-12">
             <label for="InterviewerId">InterviewerId</label>
-            <input asp-for="InterviewerId" class="form-control" />
+            <select class="form-control" asp-for="InterviewerId" asp-items="@ViewBag.InterviewerList"></select>
             <span asp-validation-for="InterviewerId"></span>
         </div>
         <input type="submit" value="Add Interview" class="btn btn-primary" />
     </form>
 </div>
+@section Scripts
+{
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>$(function () {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });</script>
+}

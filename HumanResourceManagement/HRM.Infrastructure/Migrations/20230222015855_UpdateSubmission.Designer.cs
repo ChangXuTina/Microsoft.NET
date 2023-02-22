@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM.Infrastructure.Migrations
 {
     [DbContext(typeof(HRMDbContext))]
-    [Migration("20230220075212_JobRequirementNullable")]
-    partial class JobRequirementNullable
+    [Migration("20230222015855_UpdateSubmission")]
+    partial class UpdateSubmission
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -396,9 +396,6 @@ namespace HRM.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("JobRequirementId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("JobRequredmentId")
                         .HasColumnType("int");
 
                     b.HasKey("id");

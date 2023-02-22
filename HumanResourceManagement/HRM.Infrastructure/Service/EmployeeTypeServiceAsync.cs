@@ -65,6 +65,7 @@ namespace HRM.Infrastructure.Service
         {
             EmployeeType employeeType = new EmployeeType()
             {
+                Id = model.Id,
                 Title = model.Title,
                 Description = model.Description,
                 IsActive = model.IsActive

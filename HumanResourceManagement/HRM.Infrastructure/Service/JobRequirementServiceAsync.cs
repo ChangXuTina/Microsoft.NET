@@ -71,7 +71,7 @@ namespace HRM.Infrastructure.Service
                 Title = model.Title,
                 IsActive = model.IsActive
             };
-            return jobRequirementRepositoryAsync.InsertAsync(jobRequirement);
+            return jobRequirementRepositoryAsync.UpdateAsync(jobRequirement);
         }  
     }
 }

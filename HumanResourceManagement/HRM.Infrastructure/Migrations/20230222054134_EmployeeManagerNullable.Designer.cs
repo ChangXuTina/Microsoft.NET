@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM.Infrastructure.Migrations
 {
     [DbContext(typeof(HRMDbContext))]
-    [Migration("20230220062748_ResumeUrlNullable")]
-    partial class ResumeUrlNullable
+    [Migration("20230222054134_EmployeeManagerNullable")]
+    partial class EmployeeManagerNullable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -328,31 +328,29 @@ namespace HRM.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("ClosingDate")
+                    b.Property<DateTime?>("ClosingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("varchar(500)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("JobCategoryId")
+                    b.Property<int?>("JobCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("JobLocation")
-                        .IsRequired()
                         .HasColumnType("varchar(50)");
 
-                    b.Property<DateTime>("PostingDate")
+                    b.Property<DateTime?>("PostingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("varchar(100)");
 
-                    b.Property<int>("TotalPositions")
+                    b.Property<int?>("TotalPositions")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -398,9 +396,6 @@ namespace HRM.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("JobRequirementId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("JobRequredmentId")
                         .HasColumnType("int");
 
                     b.HasKey("id");
@@ -543,9 +538,7 @@ namespace HRM.Infrastructure.Migrations
                 {
                     b.HasOne("HRM.ApllicationCore.Entity.JobCategory", "JobCategory")
                         .WithMany()
-                        .HasForeignKey("JobCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("JobCategoryId");
 
                     b.Navigation("JobCategory");
                 });

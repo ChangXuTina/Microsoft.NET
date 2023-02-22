@@ -8,6 +8,6 @@ namespace HRM.ApllicationCore.Repository
 		Task<int> DeleteAsync(int id);
 		Task<T> GetByIdAsync(int id);
 		Task<IEnumerable<T>> GetAllAsync();
-	}
+    }
 }
 

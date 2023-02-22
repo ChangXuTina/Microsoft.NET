@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM.Infrastructure.Migrations
 {
     [DbContext(typeof(HRMDbContext))]
-    [Migration("20230217051308_UpdateInterviewerFK")]
-    partial class UpdateInterviewerFK
+    [Migration("20230222055528_EmployeeManager2")]
+    partial class EmployeeManager2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,7 +50,6 @@ namespace HRM.Infrastructure.Migrations
                         .HasColumnType("varchar(10)");
 
                     b.Property<string>("ResumeUrl")
-                        .IsRequired()
                         .HasColumnType("varchar(200)");
 
                     b.HasKey("Id");
@@ -100,6 +99,9 @@ namespace HRM.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(20)");
 
+                    b.Property<int?>("ManagerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("varchar(10)");
@@ -115,6 +117,8 @@ namespace HRM.Infrastructure.Migrations
                     b.HasIndex("EmployeeStatusId");
 
                     b.HasIndex("EmployeeTypeId");
+
+                    b.HasIndex("ManagerId");
 
                     b.ToTable("Employee");
                 });
@@ -324,31 +328,29 @@ namespace HRM.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("ClosingDate")
+                    b.Property<DateTime?>("ClosingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("varchar(500)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("JobCategoryId")
+                    b.Property<int?>("JobCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("JobLocation")
-                        .IsRequired()
                         .HasColumnType("varchar(50)");
 
-                    b.Property<DateTime>("PostingDate")
+                    b.Property<DateTime?>("PostingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("varchar(100)");
 
-                    b.Property<int>("TotalPositions")
+                    b.Property<int?>("TotalPositions")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -394,9 +396,6 @@ namespace HRM.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("JobRequirementId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("JobRequredmentId")
                         .HasColumnType("int");
 
                     b.HasKey("id");
@@ -476,11 +475,17 @@ namespace HRM.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("HRM.ApllicationCore.Entity.Employee", "Manager")
+                        .WithMany()
+                        .HasForeignKey("ManagerId");
+
                     b.Navigation("EmployeeRole");
 
                     b.Navigation("EmployeeStatus");
 
                     b.Navigation("EmployeeType");
+
+                    b.Navigation("Manager");
                 });
 
             modelBuilder.Entity("HRM.ApllicationCore.Entity.Feedback", b =>
@@ -533,9 +538,7 @@ namespace HRM.Infrastructure.Migrations
                 {
                     b.HasOne("HRM.ApllicationCore.Entity.JobCategory", "JobCategory")
                         .WithMany()
-                        .HasForeignKey("JobCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("JobCategoryId");
 
                     b.Navigation("JobCategory");
                 });

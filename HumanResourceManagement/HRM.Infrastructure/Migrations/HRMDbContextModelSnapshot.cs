@@ -395,9 +395,6 @@ namespace HRM.Infrastructure.Migrations
                     b.Property<int>("JobRequirementId")
                         .HasColumnType("int");
 
-                    b.Property<int>("JobRequredmentId")
-                        .HasColumnType("int");
-
                     b.HasKey("id");
 
                     b.HasIndex("CandidateId");

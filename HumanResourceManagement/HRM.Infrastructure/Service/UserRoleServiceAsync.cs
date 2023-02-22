@@ -61,6 +61,7 @@ namespace HRM.Infrastructure.Service
         {
             UserRole userRole = new UserRole()
             {
+                Id = model.Id,
                 UserId = model.UserId,
                 RoleId = model.RoleId
             };

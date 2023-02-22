@@ -64,6 +64,7 @@ namespace HRM.Infrastructure.Service
         {
             User user = new User()
             {
+                Id = model.Id,
                 Username = model.Username,
                 EmailId = model.EmailId,
                 Password = model.Password

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HRM.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class UpdateSubmission : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,7 @@ namespace HRM.Infrastructure.Migrations
                     LastName = table.Column<string>(type: "varchar(20)", nullable: false),
                     Mobile = table.Column<string>(type: "varchar(10)", nullable: false),
                     EmailId = table.Column<string>(type: "varchar(70)", nullable: false),
-                    ResumeUrl = table.Column<string>(type: "varchar(200)", nullable: false)
+                    ResumeUrl = table.Column<string>(type: "varchar(200)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -116,6 +116,35 @@ namespace HRM.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Role",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "varchar(20)", nullable: false),
+                    Description = table.Column<string>(type: "varchar(200)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Role", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "User",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "varchar(20)", nullable: false),
+                    EmailId = table.Column<string>(type: "varchar(70)", nullable: false),
+                    Password = table.Column<string>(type: "varchar(20)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_User", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Employee",
                 columns: table => new
                 {
@@ -132,7 +161,8 @@ namespace HRM.Infrastructure.Migrations
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EmployeeRoleId = table.Column<int>(type: "int", nullable: false),
                     EmployeeTypeId = table.Column<int>(type: "int", nullable: false),
-                    EmployeeStatusId = table.Column<int>(type: "int", nullable: false)
+                    EmployeeStatusId = table.Column<int>(type: "int", nullable: false),
+                    ManagerId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -155,6 +185,11 @@ namespace HRM.Infrastructure.Migrations
                         principalTable: "EmployeeType",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Employee_Employee_ManagerId",
+                        column: x => x.ManagerId,
+                        principalTable: "Employee",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -164,12 +199,12 @@ namespace HRM.Infrastructure.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "varchar(100)", nullable: false),
-                    Description = table.Column<string>(type: "varchar(500)", nullable: false),
-                    JobLocation = table.Column<string>(type: "varchar(50)", nullable: false),
-                    TotalPositions = table.Column<int>(type: "int", nullable: false),
-                    PostingDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ClosingDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    JobCategoryId = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "varchar(500)", nullable: true),
+                    JobLocation = table.Column<string>(type: "varchar(50)", nullable: true),
+                    TotalPositions = table.Column<int>(type: "int", nullable: true),
+                    PostingDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ClosingDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    JobCategoryId = table.Column<int>(type: "int", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -179,6 +214,31 @@ namespace HRM.Infrastructure.Migrations
                         name: "FK_JobRequirement_JobCategory_JobCategoryId",
                         column: x => x.JobCategoryId,
                         principalTable: "JobCategory",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserRole",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserRole", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserRole_Role_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserRole_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -190,9 +250,8 @@ namespace HRM.Infrastructure.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CandidateId = table.Column<int>(type: "int", nullable: false),
-                    JobRequredmentId = table.Column<int>(type: "int", nullable: false),
-                    AppliedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    JobRequirementId = table.Column<int>(type: "int", nullable: false)
+                    JobRequirementId = table.Column<int>(type: "int", nullable: false),
+                    AppliedOn = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -222,15 +281,14 @@ namespace HRM.Infrastructure.Migrations
                     InterviewRound = table.Column<int>(type: "int", nullable: false),
                     InterviewTypeId = table.Column<int>(type: "int", nullable: false),
                     InterviewStatusId = table.Column<int>(type: "int", nullable: false),
-                    InterviewerId = table.Column<int>(type: "int", nullable: false),
-                    EmployeeId = table.Column<int>(type: "int", nullable: false)
+                    InterviewerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Interview", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Interview_Employee_EmployeeId",
-                        column: x => x.EmployeeId,
+                        name: "FK_Interview_Employee_InterviewerId",
+                        column: x => x.InterviewerId,
                         principalTable: "Employee",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -291,14 +349,19 @@ namespace HRM.Infrastructure.Migrations
                 column: "EmployeeTypeId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Employee_ManagerId",
+                table: "Employee",
+                column: "ManagerId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Feedback_InterviewId",
                 table: "Feedback",
                 column: "InterviewId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Interview_EmployeeId",
+                name: "IX_Interview_InterviewerId",
                 table: "Interview",
-                column: "EmployeeId");
+                column: "InterviewerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Interview_InterviewStatusId",
@@ -329,6 +392,16 @@ namespace HRM.Infrastructure.Migrations
                 name: "IX_Submission_JobRequirementId",
                 table: "Submission",
                 column: "JobRequirementId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserRole_RoleId",
+                table: "UserRole",
+                column: "RoleId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserRole_UserId",
+                table: "UserRole",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -338,7 +411,16 @@ namespace HRM.Infrastructure.Migrations
                 name: "Feedback");
 
             migrationBuilder.DropTable(
+                name: "UserRole");
+
+            migrationBuilder.DropTable(
                 name: "Interview");
+
+            migrationBuilder.DropTable(
+                name: "Role");
+
+            migrationBuilder.DropTable(
+                name: "User");
 
             migrationBuilder.DropTable(
                 name: "Employee");
